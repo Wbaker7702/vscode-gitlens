@@ -148,7 +148,7 @@ const models: GeminiModel[] = [
 	},
 	{
 		id: 'gemini-1.5-flash-8b-latest',
-		name: 'Gemini 1.5 Flash 8B',
+		name: 'Gemini 1.5 Flash 8B (latest)',
 		maxTokens: { input: 1048576, output: 8192 },
 		provider: provider,
 		hidden: true,
