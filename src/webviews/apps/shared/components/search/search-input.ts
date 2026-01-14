@@ -121,7 +121,7 @@ export class GlSearchInput extends GlElement {
 			padding-right: calc(0.7rem + calc(1.96rem * var(--gl-search-input-buttons-right)));
 			font-family: inherit;
 			font-size: inherit;
-			transition: all 0.2s ease-in-out;
+transition: padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		}
 
 		:host([data-natural-language-mode]) input {
