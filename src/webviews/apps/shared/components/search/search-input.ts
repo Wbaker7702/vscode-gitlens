@@ -121,6 +121,7 @@ export class GlSearchInput extends GlElement {
 			padding-right: calc(0.7rem + calc(1.96rem * var(--gl-search-input-buttons-right)));
 			font-family: inherit;
 			font-size: inherit;
+			transition: all 0.2s ease-in-out;
 		}
 
 		:host([data-natural-language-mode]) input {
@@ -165,6 +166,12 @@ export class GlSearchInput extends GlElement {
 			color: var(--gl-search-input-foreground);
 			font-size: 1.2rem;
 			line-height: 1.4;
+			animation: fadeIn 0.2s ease-in-out;
+		}
+
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(-0.5rem); }
+			to { opacity: 1; transform: translateY(-0.1rem); }
 		}
 
 		input[aria-valid='false'] + .message {
@@ -198,6 +205,7 @@ export class GlSearchInput extends GlElement {
 			color: var(--gl-search-input-foreground);
 			border: 1px solid transparent;
 			background: none;
+			transition: background-color 0.1s ease;
 		}
 		button:focus:not([disabled]) {
 			outline: 1px solid var(--vscode-focusBorder);
@@ -223,6 +231,7 @@ export class GlSearchInput extends GlElement {
 			text-align: left;
 			color: var(--vscode-menu-foreground);
 			border-radius: 3px;
+			transition: color 0.1s ease, background-color 0.1s ease;
 		}
 
 		.menu-button:hover {
