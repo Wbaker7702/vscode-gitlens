@@ -170,8 +170,14 @@ export class GlSearchInput extends GlElement {
 		}
 
 		@keyframes fadeIn {
-			from { opacity: 0; transform: translateY(-0.5rem); }
-			to { opacity: 1; transform: translateY(-0.1rem); }
+			from {
+				opacity: 0;
+				transform: translateY(-0.5rem);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(-0.1rem);
+			}
 		}
 
 		input[aria-valid='false'] + .message {
@@ -231,7 +237,9 @@ export class GlSearchInput extends GlElement {
 			text-align: left;
 			color: var(--vscode-menu-foreground);
 			border-radius: 3px;
-			transition: color 0.1s ease, background-color 0.1s ease;
+			transition:
+				color 0.1s ease,
+				background-color 0.1s ease;
 		}
 
 		.menu-button:hover {

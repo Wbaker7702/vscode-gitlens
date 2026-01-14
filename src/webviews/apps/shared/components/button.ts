@@ -49,7 +49,11 @@ export class GlButton extends LitElement {
 				border: 1px solid var(--button-border);
 				border-radius: var(--gk-action-radius, 0.3rem);
 				-webkit-font-smoothing: auto;
-				transition: background 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+				transition:
+					background 0.1s ease-in-out,
+					border-color 0.1s ease-in-out,
+					color 0.1s ease-in-out,
+					opacity 0.1s ease-in-out;
 			}
 
 			.control {
