@@ -75,6 +75,7 @@ export class GlSearchBox extends GlElement {
 			border-radius: 3px;
 			background: none;
 			text-align: center;
+			transition: background-color 0.1s ease, color 0.1s ease;
 		}
 		.button[disabled] {
 			color: var(--vscode-disabledForeground);
