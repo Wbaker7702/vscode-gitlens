@@ -319,6 +319,13 @@ export const openAIModels = <T extends OpenAIProviders>(provider: AIProviderDesc
 		hidden: true,
 	},
 	{
+		id: 'gpt-4-vision-preview',
+		name: 'GPT-4 Vision (Preview)',
+		maxTokens: { input: 128000, output: 4096 },
+		provider: provider,
+		hidden: true,
+	},
+	{
 		id: 'gpt-4',
 		name: 'GPT-4',
 		maxTokens: { input: 8192, output: 4096 },

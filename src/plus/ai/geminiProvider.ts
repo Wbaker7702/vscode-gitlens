@@ -146,6 +146,20 @@ const models: GeminiModel[] = [
 		maxTokens: { input: 1048576, output: 8192 },
 		provider: provider,
 	},
+	{
+		id: 'gemini-1.5-flash-8b-latest',
+		name: 'Gemini 1.5 Flash 8B',
+		maxTokens: { input: 1048576, output: 8192 },
+		provider: provider,
+		hidden: true,
+	},
+	{
+		id: 'gemini-1.5-flash-8b-001',
+		name: 'Gemini 1.5 Flash 8B 001',
+		maxTokens: { input: 1048576, output: 8192 },
+		provider: provider,
+		hidden: true,
+	},
 ];
 
 export class GeminiProvider extends OpenAICompatibleProviderBase<typeof provider.id> {
